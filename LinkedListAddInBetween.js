@@ -42,5 +42,3 @@ ll.addNodeInBetween('Some');
 ll.addNodeInBetween('Else');
 ll.addNodeInBetween('Thing');
 console.log(JSON.stringify(ll));
-
-// Some -> Thing -> Else -> null
