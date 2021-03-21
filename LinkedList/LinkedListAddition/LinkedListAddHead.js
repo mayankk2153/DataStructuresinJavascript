@@ -1,6 +1,6 @@
-const Node = require('./Node');
+const Node = require('../../Node');
 
-class LinkedList {
+class LinkedListAddHead {
   constructor() {
     this.head = null;
   }
@@ -14,7 +14,9 @@ class LinkedList {
   }
 }
 
-let ll = new LinkedList();
+module.exports = LinkedListAddHead;
+
+let ll = new LinkedListAddHead();
 ll.addToHead('hello');
 ll.addToHead('world');
 
