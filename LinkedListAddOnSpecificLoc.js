@@ -28,12 +28,12 @@ class LinkedListAddOnSpecificLoc {
       let headNode = this.head;
       let size = this.getSize(headNode);
 
-      if (size <= pos) throw new Error('Position is greator than list size.');
+      if (size < pos) throw new Error('Position is greator than list size.');
 
-      if (currentHead.getNextNode() == null) currentHead.setNextNode(newNode);
+      if (currentHead.getNextNode() === null) currentHead.setNextNode(newNode);
       // Case 3: Linked List contains more than 1 node
       else {
-        let counter = 0;
+        let counter = 1;
         while (counter < pos) {
           currentHead = currentHead.getNextNode();
           counter += 1;
