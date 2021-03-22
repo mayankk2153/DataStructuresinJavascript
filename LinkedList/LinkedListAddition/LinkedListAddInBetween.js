@@ -37,8 +37,4 @@ class LinkedListAddInBetween {
   }
 }
 
-const ll = new LinkedListAddInBetween();
-ll.addNodeInBetween('Some');
-ll.addNodeInBetween('Else');
-ll.addNodeInBetween('Thing');
-console.log(JSON.stringify(ll));
+module.exports = LinkedListAddInBetween;

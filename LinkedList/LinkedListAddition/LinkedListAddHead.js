@@ -14,10 +14,5 @@ class LinkedListAddHead {
   }
 }
 
+
 module.exports = LinkedListAddHead;
-
-let ll = new LinkedListAddHead();
-ll.addToHead('hello');
-ll.addToHead('world');
-
-console.log(ll);

@@ -45,8 +45,5 @@ class LinkedListAddOnSpecificLoc {
   }
 }
 
-const ll = new LinkedListAddOnSpecificLoc();
-ll.addNodeOnSpecificLoc('Some', 0);
-ll.addNodeOnSpecificLoc('Else', 1);
-ll.addNodeOnSpecificLoc('Thing', 2);
-console.log(JSON.stringify(ll));
+
+module.exports = LinkedListAddOnSpecificLoc;

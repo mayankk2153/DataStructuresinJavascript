@@ -20,8 +20,4 @@ class LinkedListAddTail {
   }
 }
 
-let ll = new LinkedListAddTail();
-ll.addToTail('hello');
-ll.addToTail('world');
-
-console.log(ll);
+module.exports = LinkedListAddTail;
