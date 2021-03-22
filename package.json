@@ -1,0 +1,23 @@
+{
+  "name": "datastructuresinjavascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Node.js",
+  "scripts": {
+    "dev": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mayankk2153/DataStructuresinJavascript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mayankk2153/DataStructuresinJavascript/issues"
+  },
+  "homepage": "https://github.com/mayankk2153/DataStructuresinJavascript#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "inquirer": "^8.0.0"
+  }
+}
