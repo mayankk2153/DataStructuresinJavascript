@@ -11,8 +11,8 @@ class LinkedListAddTail {
 
     if (currentTail === null) this.head = newHead;
     else {
-      while (currentTail.getNextNode(new Node(data)) !== null) {
-        currentTail = currentTail.setNextNode(new Node(data));
+      while (currentTail.getNextNode() !== null) {
+        currentTail = currentTail.getNextNode();
       }
 
       currentTail.setNextNode(newHead);
