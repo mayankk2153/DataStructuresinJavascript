@@ -1,19 +1,20 @@
-class LinkedListDeleteTail {
-  constructor() {
-    this.head = null;
+const LinkedListDeleteTail = (head) => {
+  // case 1: list is empty
+  if (head == null) throw new Error('List is underflow.');
+  // case 2: list has only 1 record
+  else if (head.getNextNode() == null) return {value: head.data, newHead: null};
+  // case 3: list has multiple records
+  else {
+    let initialHead = head;
+    let secondLastHead;
+    while (head.getNextNode()) {
+      secondLastHead = head;
+      head = head.getNextNode();
+    }
+    secondLastHead.setNextNode(null);
+
+    return {value: head.data, newHead: initialHead};
   }
-
-  removeFromTail = (data) => {
-    const currentHead = this.head;
-
-    // Case 1: If list is EMPTY
-    if (currentHead === null)
-      console.log('\nError: Empty Linked List!'.red.bold);
-    // Case 2: If list has only 1 Node
-    // else if ('something') {
-    // }
-    // Case 3: If list has multiple Nodes ? Delete last node
-  };
-}
+};
 
 module.exports = LinkedListDeleteTail;

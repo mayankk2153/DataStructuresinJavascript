@@ -1,8 +1,20 @@
 const Node = require('../Node');
+const LinkedListDeleteHead = require('./LinkedListDeletion/LinkedListDeleteHead');
 
 class LinkedList {
   constructor() {
     this.head = null;
+  }
+  getSize(node) {
+    let count = 1;
+    if (!node) return 0;
+
+    while (node.getNextNode()) {
+      count += 1;
+      node = node.getNextNode();
+    }
+
+    return count;
   }
   addToHead(data) {
     const newHead = new Node(data);
@@ -81,6 +93,18 @@ class LinkedList {
         currentHead.setNextNode(newNode);
       }
     }
+  }
+  deleteHead() {
+    let currentHead = this.head;
+    let response = LinkedListDeleteHead(currentHead);
+    this.head = response.newHead;
+    return response.value;
+  }
+  deleteTail() {
+    let currentHead = this.head;
+    let response = LinkedListDeleteHead(currentHead);
+    this.head = response.newHead;
+    return response.value;
   }
 }
 
